@@ -1,0 +1,24 @@
+extends structure
+
+block sidebar
+
+block main
+  h6= page 
+  div
+    hr
+    each item, index in json
+      hr
+      h3= item.title
+      br
+      a(href="/Cadenzas/"+index)
+        img(src="images/images/"+item.thumb width="240px")
+      div.product
+        p
+          a(href="https://www.boosey.com/"+item.link title=item.title)= item.title
+        p= item.description
+        p= item.ismn
+      //- div.product
+        img(src="images/"+item.sample width="300px")
+        img(src="images/"+item.illustration width="200px")
+
+block images

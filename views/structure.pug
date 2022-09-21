@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  block banner
+    include _nav0
+  .card
+    .card-body
+      .row
+        .col-5.col-sm-4.col-md-3.col-lg-2
+          block sidebar
+        .col-7.col-sm-8.col-md-9.col-lg-10
+          .row
+            .col-8
+              block main
+            .col-4
+              .card
+                .card-body
+                  block images
+  .card
+    .card-body.footer
+      block footer
+        include _footer
+        //- .col-5.col-sm-4.col-md-3.col-lg-2 &nbsp;
+        //- .col-7.col-sm-8.col-md-9.col-lg-10
+  //- .row.footer
+    //- .col-5.col-sm-4.col-md-3.col-lg-2 &nbsp;
+    //- .col-7.col-sm-8.col-md-9.col-lg-10

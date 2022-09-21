@@ -1,0 +1,50 @@
+extends structure
+
+block sidebar
+
+block main
+  div
+    p
+    h3= page 
+    br
+    h5 Distribution of "Strings Attached Ltd." publications exclusively by &nbsp;
+      p
+      a(href= "https://boosey.com/shop/powersearch/powersearch_results?search=Strings+Attached" title= "Boosey.com" target= "_blank")
+       img(src="images/images/bh-logo.svg" title= "Boosey and Hawkes Music" width="30%")
+    p 
+      | All publications can be purchased from Boosey and Hawkes Music. Click the links.
+
+    div
+      table.home
+        tr.home
+        each item, index in json2
+          td.home
+            a(href="/"+page2+"/"+index title= item.title+ " "+ item.description)
+              img(src="images/images/"+item.thumb width="100px")
+            br
+            br
+            a(href= item.link title= "View or purchase \"" +item.title+"\" at Boosey.com" target="_blank").btn.btn-outline-success.btn-xs= "Purchase"
+
+    br
+    div
+      table.home
+        tr.home
+        each item, index in json3
+          td.home
+            a(href="/"+page3+"/"+index title= item.title+ " "+ item.description)
+              img(src="images/images/"+item.thumb width="100px")
+            br
+            br
+            a(href= item.link title= "View or purchase \"" +item.title+"\" at Boosey.com" target="_blank").btn.btn-outline-success.btn-xs= "Purchase"
+    br
+
+    //- div.product
+      p
+        a(href="https://www.boosey.com/"+item.link title=item.title)= item.title
+      p= item.description
+      p= item.ismn
+      div.product
+        img(src="images/"+item.sample width="300px")
+        img(src="images/"+item.illustration width="200px")
+
+block images

@@ -1,0 +1,25 @@
+extends structure
+
+block sidebar
+
+block main
+  div
+    p
+    each item, index in json
+      div
+        h3= item.title
+        br
+        div   
+            a(href="/"+page+"/"+index)
+                img(src="images/images/"+item.thumb width="200px")
+            div.product
+                p
+                a(href= item.link title= "View or purchase \"" +item.title+"\" at Boosey.com" target="_blank").btn.btn-outline-info.btn-xs= "Purchase"
+                p
+                p= item.description
+                p= "ISMN "+item.ismn
+            //- div.product
+                img(src="images/"+item.sample width="300px")
+                img(src="images/"+item.illustration width="200px")
+
+block images

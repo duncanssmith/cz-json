@@ -1,0 +1,39 @@
+extends structure
+
+block sidebar
+
+block main
+  div
+    h3= item.title
+    br
+    img(src="../../images/images/"+item.thumb width="240px")
+    .product
+      p
+      p
+        a(href="/"+page title= "Return to "+page+" list").btn.btn-xs.btn-outline-success= " "+page 
+        | &nbsp;
+        a(href= item.link title= "View or purchase \""+item.title+"\" at Boosey.com" target= "_blank").btn.btn-outline-info.btn-xs= "Purchase"
+      p
+      p= item.description
+      p
+      p= "ISMN "+item.ismn
+
+    h5= item.text.head
+
+    each elem in item.text.body
+        p= elem
+
+block images
+  table.home
+      each prod, index in products
+        if (index%3 == 0)
+          tr.home
+        if (index < 3)
+          td.home
+            a(href="/Publications/"+index title= prod.title+ " "+ prod.description)
+              img(src="../../images/images/"+prod.thumb width="60px")
+            br
+            br
+            a(href= prod.link title= "View or purchase \"" +prod.title+"\" at Boosey.com" target="_blank").btn.btn-outline-success.btn-xs= "Purchase"
+        else
+          break
