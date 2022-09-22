@@ -1,7 +1,22 @@
+@charset "utf-8";
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans";
+  /* font-family: "Roboto"; */
+  /* font-family: "Popper"; */
   background:#660;
+}
+
+.courier {
+ font-family: Courier;
+ color: #005CB9;
+}
+
+.popper {
+ font-family: Popper;
+ color: #005CB9;
 }
 
 a {
