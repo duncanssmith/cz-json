@@ -66,6 +66,10 @@ a {
   padding: 10px 22px 12px 10px;
 }
 
+.photo-box{
+  margin: 10px 10px 10px 300px;
+}
+
 #footer {
   background:#EEE;
   margin: 10px 0 0 0;
