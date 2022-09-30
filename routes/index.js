@@ -65,11 +65,11 @@ router.get('/Publications/:id', function(req, res, next) {
 
 router.get('/About', function(req, res, next) {
   const about = aboutFile 
-  res.render('3_about', { title: 'Mark Knight About', json: about, page: 'About' });
+  res.render('3_About', { title: 'Mark Knight About', json: about, page: 'About' });
 });
 
 router.get('/Contact', function(req, res, next) {
-  res.render('4_contact', { title: 'Mark Knight Contact' });
+  res.render('4_Contact', { title: 'Mark Knight Contact' });
 });
 
 module.exports = router;
