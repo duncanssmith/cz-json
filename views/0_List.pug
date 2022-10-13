@@ -14,7 +14,7 @@ block main
                 img(src="images/images/"+item.thumb width="200px")
             div.product
                 p
-                a(href= item.link title= "View or purchase \"" +item.title+"\" at Boosey.com" target="_blank").btn.btn-outline-info.btn-xs= "Purchase"
+                a(href= item.link title= "View or purchase \"" +item.title+"\" at Boosey.com" target="_blank").btn.btn-outline-info.btn-xs= "Purchase £"+item.price
                 p
                 p= item.description
                 p= "ISMN "+item.ismn
