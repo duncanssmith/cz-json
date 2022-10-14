@@ -49,68 +49,54 @@ a {
   color: rgb(90,90,0,.9);
   background: #efedde;
 }
-
 .card .card-body .nav-main a {
   color: rgb(255,255,255,1);
 }
-
 .card .card-body .nav-main a {
   color: rgb(255,255,255,1);
   font-size: 1.2em;
 }
-
 .jumbo{
   background: #efedde;
   color: rgb(55, 75, 55, 1);
   margin: 10px 6px 8px 8px;
   padding: 10px 22px 12px 10px;
 }
-
 .photo-box{
   margin: 10px 10px 10px 300px;
 }
-
 #footer {
   color: #fff;
   margin: 10px 0 0 0;
   padding: 0;
 }
-
 .footer {
   background: rgb(180,180,180,.8);
 }
-
 .home td {
   margin: 10px;
   padding: 20px;
 }
-
 .div_top_nav {
     background-color:#fff;
     display:inline;      
 }
-
 .ul_top_nav li {
-    color:rgb(255, 255, 255, 1);
-    background-color: rgb(96,96,40,.9);
+    color:rgb(200, 200, 200, 1);
+    background-color: rgb(96,96,0,1);
     display: inline;
     float: left;
     text-align: center;
-    padding: 12px 14px;
+    padding: 10px 12px;
 }
-
 .ul_top_nav li:hover {
-    color:rgb(200, 200, 200, 1);
-    background-color: rgb(86,86,60,.8);
+    background-color: rgb(140,140,0,1);
     display: inline;
     float: left;
 }
-
 .ul_top_nav li.active {
-    color:rgb(200, 200, 200, 1);
-    background-color: rgb(76,76,40,.7);
+    background-color: rgb(240,240,10,.7);
 }
-
 .a_top_nav {
     text-decoration: none;
 }
