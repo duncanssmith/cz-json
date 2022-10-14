@@ -71,16 +71,46 @@ a {
 }
 
 #footer {
-  background:#EEE;
+  color: #fff;
   margin: 10px 0 0 0;
   padding: 0;
 }
 
 .footer {
-  background:#EEE;
+  background: rgb(180,180,180,.8);
 }
 
 .home td {
   margin: 10px;
   padding: 20px;
+}
+
+.div_top_nav {
+    background-color:#fff;
+    display:inline;      
+}
+
+.ul_top_nav li {
+    color:rgb(255, 255, 255, 1);
+    background-color: rgb(96,96,40,.9);
+    display: inline;
+    float: left;
+    text-align: center;
+    padding: 12px 14px;
+}
+
+.ul_top_nav li:hover {
+    color:rgb(200, 200, 200, 1);
+    background-color: rgb(86,86,60,.8);
+    display: inline;
+    float: left;
+}
+
+.ul_top_nav li.active {
+    color:rgb(200, 200, 200, 1);
+    background-color: rgb(76,76,40,.7);
+}
+
+.a_top_nav {
+    text-decoration: none;
 }

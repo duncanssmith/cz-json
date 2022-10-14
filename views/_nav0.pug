@@ -1,17 +1,42 @@
 
 .card
   .card-body.nav-main
-    //- a(href="/")
-      img(src="images/senh-logo-print.png" width="")
-    a(href="/") Home
-      i(class="bi-backspace" width="100%")
-    span.spacer &nbsp;|&nbsp;
-    a(href="/Cadenzas") Cadenzas 
-    span.spacer &nbsp;|&nbsp;
-    a(href="/Scales") Scales 
-    span.spacer &nbsp;|&nbsp;
-    a(href="/Publications") All Publications 
-    span.spacer &nbsp;|&nbsp;
-    a(href="/About") About
-    span.spacer &nbsp;|&nbsp;
-    a(href="/Contact") Contact
+    //- img(src="images/violins8080_180.gif" width="")
+    .div_top_nav
+      ul.ul_top_nav.nav-main
+        if home
+          li.active
+            a(href="/").a_top_nav Home
+        else 
+          li
+            a(href="/").a_top_nav Home
+        if cadenzas
+          li.active
+            a(href="/Cadenzas").a_top_nav Cadenzas
+        else 
+          li
+            a(href="/Cadenzas").a_top_nav Cadenzas
+        if scales
+          li.active
+            a(href="/Scales").a_top_nav Scales
+        else 
+          li
+            a(href="/Scales").a_top_nav Scales
+        if publications
+          li.active
+            a(href="/Publications").a_top_nav All Publications
+        else 
+          li
+            a(href="/Publications").a_top_nav All Publications
+        if about
+          li.active
+            a(href="/About").a_top_nav About
+        else 
+          li
+            a(href="/About").a_top_nav About
+        if contact
+          li.active
+            a(href="/Contact").a_top_nav Contact
+        else 
+          li
+            a(href="/Contact").a_top_nav Contact
