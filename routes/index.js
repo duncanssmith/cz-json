@@ -38,6 +38,7 @@ router.get('/Cadenzas', function(req, res, next) {
 router.get('/Cadenzas/:id', function(req, res, next) {
   const products = productsFile 
   var id = req.params.id
+  if (id > 4) {id = 0}
   const item = cadenzasFile[id]
   res.render('1_Item', { title: 'Mark Knight Cadenzas', item: item, cadenzas:true, products: products, page: 'Cadenzas', index: id});
 });
@@ -49,6 +50,7 @@ router.get('/Scales', function(req, res, next) {
 
 router.get('/Scales/:id', function(req, res, next) {
   var id = req.params.id
+  if (id > 5) {id = 0}
   const item = scalesFile[id] 
   res.render('1_Item', { title: 'Mark Knight Scales', item: item, scales:true, page: 'Scales', index: id});
 });
@@ -60,6 +62,7 @@ router.get('/Publications', function(req, res, next) {
 
 router.get('/Publications/:id', function(req, res, next) {
   var id = req.params.id
+  if (id > 10) {id = 0}
   const item = productsFile[id] 
   res.render('1_Item', { title: 'Mark Knight All Publications, Cadenzas and Scales', publications: true, item: item, page: 'Publications', index: id});
 });
