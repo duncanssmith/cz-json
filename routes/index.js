@@ -55,13 +55,13 @@ router.get('/Scales/:id', function(req, res, next) {
 
 router.get('/Publications', function(req, res, next) {
   const products = productsFile 
-  res.render('0_List', { title: 'Mark Knight All Publications', publications: true, json: products, page: 'Publications' });
+  res.render('0_List', { title: 'Mark Knight All Publications, Cadenzas and Scales', publications: true, json: products, page: 'Publications' });
 });
 
 router.get('/Publications/:id', function(req, res, next) {
   var id = req.params.id
   const item = productsFile[id] 
-  res.render('1_Item', { title: 'Mark Knight All Publications', publications: true, item: item, page: 'Publications', index: id});
+  res.render('1_Item', { title: 'Mark Knight All Publications, Cadenzas and Scales', publications: true, item: item, page: 'Publications', index: id});
 });
 
 router.get('/About', function(req, res, next) {
