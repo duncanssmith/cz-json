@@ -60,7 +60,7 @@ $cadenzas = [
 	], 
 	3 => [
 		'title' => 'Cadenzas for Haydn Cello Concerto in C Hob. VIIb:1',
-		'description' => 'Composed for his daughter Josephine Knight, (currently Piatti Chair of \'Cello of the Royal Academy of Music, London), the Haydn cadenzas are now published and available for purchase.',
+		'description' => 'Composed for his daughter Josephine Knight, (currently Alfredo Piatti Chair of \'Cello of the Royal Academy of Music, London), the Haydn cadenzas are now published and available for purchase.',
 		'price' => '10.75',
 		'ismn' => '979-0-9002001-3-6',
 		'id' => '103',
