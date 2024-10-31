@@ -7,6 +7,7 @@ block main
     p
     each item, index in json
       div
+        br
         h3= item.title
         br
         div   
@@ -15,11 +16,12 @@ block main
             div.product
                 p
                 // a(href= item.link title= "View or purchase \"" +item.title+"\" at Boosey.com" target="_blank").btn.btn-outline-info.btn-xs= "Purchase £"+item.price
+                a(href= "").btn.btn-outline-info.btn-xs= "£"+item.price
                 p
                 p= item.description
                 p= "ISMN "+item.ismn
             //- div.product
                 img(src="images/"+item.sample width="300px")
                 img(src="images/"+item.illustration width="200px")
-
+      hr
 //- block images
