@@ -7,12 +7,13 @@ block main
     p
     h3= page 
     br
-    // h5 Distribution of "Strings Attached Ltd." publications exclusively by &nbsp;
-      // p
-      a(href= "https://boosey.com/shop/powersearch/powersearch_results?search=Strings+Attached" title= "Boosey.com" target= "_blank")
-       img(src="images/images/bh-logo.svg" title= "Boosey and Hawkes Music" width="30%")
-    // p 
-      | All publications can be purchased from Boosey and Hawkes Music. Click the links.
+    h5 Distribution of "Strings Attached Ltd." publications exclusively by &nbsp;
+    p
+      a(href= "https://nymetmusic.com/product-category/solo-instruments/mark-knight-cadenzas-and-scales/",
+      title= "NymetMusic.com" target= "_blank")
+       img(src="images/images/nm-logo.jpg" title= "Nymet Music" width="80%")
+    p 
+      | All publications can be purchased from Nymet Music. Click the links.
 
     div
       table.home
@@ -23,8 +24,8 @@ block main
               img(src="images/images/"+item.thumb width="100px")
             br
             br
-            // a(href= item.link title= "View or purchase \"" +item.title+"\" at Boosey.com" target="_blank").btn.btn-outline-success.btn-xs= "Purchase £"+item.price
-            a(href="").btn.btn-outline-success.btn-xs= "£"+item.price
+            a(href= item.link title= "View or purchase \"" +item.title+"\" at NymetMusic.com" target="_blank").btn.btn-outline-success.btn-xs= "Purchase £"+item.price
+            //- a(href="").btn.btn-outline-success.btn-xs= "£"+item.price
 
     br
     div
@@ -36,9 +37,9 @@ block main
               img(src="images/images/"+item.thumb width="100px")
             br
             br
-            // a(href= item.link title= "View or purchase \"" +item.title+"\" at Boosey.com" target="_blank").btn.btn-outline-success.btn-xs= "Purchase £"+item.price
+            a(href= item.link title= "View or purchase \"" +item.title+"\" at NymetMusic.com" target="_blank").btn.btn-outline-success.btn-xs= "Purchase £"+item.price
             //btn.btn-outline-success.btn-xs= "£"+item.price
-            a(href="").btn.btn-outline-success.btn-xs= "£"+item.price
+            //- a(href="").btn.btn-outline-success.btn-xs= "£"+item.price
     br
 
     //- div.product
